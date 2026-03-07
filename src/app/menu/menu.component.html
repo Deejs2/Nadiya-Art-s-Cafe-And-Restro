@@ -303,7 +303,7 @@
     @if (restaurant(); as r) {
     <footer class="footer-wave bg-stone-900 text-stone-300 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pb-12 border-b border-stone-700/50">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-stone-700/50">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
                         <img src="assets/images/Nadiya Art's Cafe And Restro Logo.gif" alt="Nadiya Art's Cafe And Restro Logo" class="w-12 h-12 object-contain" />
@@ -313,6 +313,9 @@
                     </div>
                     <p class="text-sm text-stone-400 leading-relaxed">{{ r.tagline[lang()] }}</p>
                 </div>
+                
+                <div class=""></div>
+                
                 <div>
                     <h4 class="text-white font-semibold mb-4">
                         {{ lang() === 'ne' ? 'खुला समय' : 'Opening Hours' }}
@@ -326,7 +329,8 @@
                         }
                     </ul>
                 </div>
-                <div>
+                
+                <div class="text-end">
                     <h4 class="text-white font-semibold mb-4">
                         {{ lang() === 'ne' ? 'सम्पर्क' : 'Contact' }}
                     </h4>
