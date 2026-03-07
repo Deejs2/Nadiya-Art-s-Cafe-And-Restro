@@ -226,20 +226,7 @@
             { "label": { "en": "Sweet Lassi", "ne": "मिठो लस्सी" }, "price": 120, "veg": true },
             { "label": { "en": "Mango Lassi", "ne": "आँप लस्सी" }, "price": 150, "veg": true }
           ]
-        },
-        {
-          "id": 44,
-          "title": { "en": "Mineral Water", "ne": "मिनरल पानी" },
-          "price": null,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": { "en": "per bottle", "ne": "प्रति बोतल" },
-          "variants": [
-            { "label": { "en": "500ml", "ne": "५०० मिलि" }, "price": 30, "veg": true },
-            { "label": { "en": "1L", "ne": "१ लिटर" }, "price": 50, "veg": true }
-          ]
-        },
+        }, 
         {
           "id": 45,
           "title": { "en": "Fresh Juice", "ne": "ताजा जुस" },
@@ -263,7 +250,9 @@
           "quantity": { "en": "per bottle", "ne": "प्रति बोतल" },
           "variants": [
             { "label": { "en": "Coke", "ne": "कोक" }, "price": 80, "veg": true },
-            { "label": { "en": "Sprite", "ne": "स्प्राइट" }, "price": 80, "veg": true }
+            { "label": { "en": "Sprite", "ne": "स्प्राइट" }, "price": 80, "veg": true },
+            { "label": { "en": "Fanta", "ne": "फान्टा" }, "price": 80, "veg": true }, 
+            { "label": { "en": "Mountain Dew", "ne": "माउन्टेन ड्यू" }, "price": 80, "veg": true}
           ]
         },
         {
@@ -351,10 +340,10 @@
           "badge": null,
           "spicy": false,
           "veg": true,
-          "quantity": { "en": "per pack", "ne": "प्रति प्याक" },
+          "quantity": { "en": "per piece", "ne": "प्रति टुक्रा" },
           "variants": [
-            { "label": { "en": "Surya", "ne": "सूर्या" }, "price": 150, "veg": true },
-            { "label": { "en": "Shikhar Ice", "ne": "शिखर आइस" }, "price": 200, "veg": true }
+            { "label": { "en": "Surya", "ne": "सूर्या" }, "price": 25, "veg": true },
+            { "label": { "en": "Shikhar Ice", "ne": "शिखर आइस" }, "price": 25, "veg": true }
           ]
         },
         {
@@ -366,8 +355,8 @@
           "veg": true,
           "quantity": { "en": "per session", "ne": "प्रति सत्र" },
           "variants": [
-            { "label": { "en": "Apple", "ne": "एप्पल" }, "price": 500, "veg": true },
-            { "label": { "en": "Mint", "ne": "मिंट" }, "price": 500, "veg": true }
+            { "label": { "en": "Apple", "ne": "एप्पल" }, "price": 400, "veg": true },
+            { "label": { "en": "Mint", "ne": "मिंट" }, "price": 400, "veg": true }
           ]
         }
       ]
@@ -389,6 +378,9 @@
     "hours": {
       "en": ["Sun–Thu: 08:00 AM – 10:00 PM", "Fri–Sat: 08:00 AM – 11:00 PM"],
       "ne": ["आइत–बिहि: बिहान ०८:०० – राति १०:००", "शुक्र–शनि: बिहान ०८:०० – राति ११:००"]
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/jirel.Rahul"
     }
   }
 }

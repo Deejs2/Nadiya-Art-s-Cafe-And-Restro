@@ -73,6 +73,24 @@ export class MenuComponent implements OnInit {
   onWindowScroll(): void {
     this.showScrollTop.set(window.scrollY > 400);
     this.navScrolled.set(window.scrollY > 50);
+    this.updateActiveCategory();
+  }
+
+  private updateActiveCategory(): void {
+    const categories = this.filteredCategories();
+    let activeId = '';
+    for (const cat of categories) {
+      const el = document.getElementById(`cat-${cat.id}`);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 160) {
+          activeId = cat.id;
+        }
+      }
+    }
+    if (activeId && activeId !== this.activeCategoryId()) {
+      this.activeCategoryId.set(activeId);
+    }
   }
 
   setLang(lang: Lang): void {

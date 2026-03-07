@@ -37,6 +37,9 @@ export interface RestaurantInfo {
   email: string;
   address: LocalizedText;
   hours: { en: string[]; ne: string[] };
+  social: {
+    facebook: string;
+  };
 }
 
 export interface MenuData {
