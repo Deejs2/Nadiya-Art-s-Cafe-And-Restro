@@ -27,6 +27,7 @@ export class MenuComponent implements OnInit {
   readonly mobileMenuOpen = signal(false);
   readonly showScrollTop = signal(false);
   readonly navScrolled = signal(false);
+  readonly skeletonItems = [1, 2];
 
   readonly restaurant = computed(() => this.menuData()?.restaurant ?? null);
   readonly currency = computed(() => this.menuData()?.currency ?? 'रु');
