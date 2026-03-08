@@ -1,5 +1,5 @@
-import { Component, computed, inject, OnInit, signal, HostListener, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import { NgClass } from '@angular/common';
+import { Component, computed, inject, OnInit, signal, HostListener, ElementRef, ViewChild, NgModule } from '@angular/core';
+import { CommonModule, NgClass } from '@angular/common';
 import { LanguageService } from '../services/language.service';
 import { MenuService } from '../services/menu.service';
 import { Lang, MenuCategory, MenuData, MenuItem } from '../models/menu.model';
@@ -10,7 +10,7 @@ interface FilteredCategory extends MenuCategory {
 
 @Component({
   selector: 'app-menu',
-  imports: [NgClass],
+  imports: [CommonModule],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
@@ -31,6 +31,9 @@ export class MenuComponent implements OnInit {
 
   readonly restaurant = computed(() => this.menuData()?.restaurant ?? null);
   readonly currency = computed(() => this.menuData()?.currency ?? 'रु');
+
+  @ViewChild('categoryNav') categoryNav!: ElementRef<HTMLDivElement>;
+
 
   readonly filteredCategories = computed<FilteredCategory[]>(() => {
     const data = this.menuData();
@@ -91,7 +94,19 @@ export class MenuComponent implements OnInit {
     }
     if (activeId && activeId !== this.activeCategoryId()) {
       this.activeCategoryId.set(activeId);
+      this.scrollActiveNavIntoView(activeId);
     }
+  }
+
+  private scrollActiveNavIntoView(catId: string): void {
+    const nav = this.categoryNav?.nativeElement;
+    if (!nav) return;
+    const activeLink = nav.querySelector(`[data-cat-id="${catId}"]`) as HTMLElement;
+    if (!activeLink) return;
+    const navRect = nav.getBoundingClientRect();
+    const linkRect = activeLink.getBoundingClientRect();
+    const offsetLeft = linkRect.left - navRect.left - nav.clientWidth / 2 + linkRect.width / 2;
+    nav.scrollBy({ left: offsetLeft, behavior: 'smooth' });
   }
 
   setLang(lang: Lang): void {
@@ -133,4 +148,11 @@ export class MenuComponent implements OnInit {
   trackItem(_: number, item: MenuItem): number {
     return item.id;
   }
+
+  scrollCategoryNav(offset: number): void {
+  const nav = this.categoryNav?.nativeElement;
+  if (nav) {
+    nav.scrollBy({ left: offset, behavior: 'smooth' });
+  }
+}
 }

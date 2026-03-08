@@ -107,16 +107,35 @@
         @if (!loading() && filteredCategories().length > 0) {
         <nav class="sticky top-20 z-30 bg-white/95 backdrop-blur-lg border-b border-stone-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center gap-1.5 overflow-x-auto py-3 scrollbar-hide">
-                    @for (cat of filteredCategories(); track cat.id) {
-                    <a href="#"
-                        class="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-stone-100 text-stone-600 hover:bg-amber-100 hover:text-amber-700"
-                        [class.!bg-amber-600]="activeCategoryId() === cat.id"
-                        [class.!text-white]="activeCategoryId() === cat.id" (click)="scrollToCategory(cat.id, $event)">
-                        <i class="fa-solid {{ cat.icon }} text-[10px]"></i>
-                        <span>{{ cat.name[lang()] }}</span>
-                    </a>
-                    }
+                <div class="relative flex items-center">
+                    <!-- Left scroll arrow -->
+                    <button
+                        class="hidden sm:flex absolute -left-1 z-10 w-8 h-8 items-center justify-center rounded-full bg-white shadow-md border border-stone-200 text-stone-500 hover:text-amber-600 hover:border-amber-300 transition-all"
+                        (click)="scrollCategoryNav(-200)" aria-label="Scroll left">
+                        <i class="fa-solid fa-chevron-left text-xs"></i>
+                    </button>
+
+                    <div #categoryNav
+                        class="flex items-center gap-1.5 overflow-x-auto py-3 scrollbar-hide scroll-smooth px-2 sm:px-8">
+                        @for (cat of filteredCategories(); track cat.id) {
+                        <a href="#"
+                            [attr.data-cat-id]="cat.id"
+                            class="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all bg-stone-100 text-stone-600 hover:bg-amber-100 hover:text-amber-700"
+                            [class.!bg-amber-600]="activeCategoryId() === cat.id"
+                            [class.!text-white]="activeCategoryId() === cat.id"
+                            (click)="scrollToCategory(cat.id, $event)">
+                            <i class="fa-solid text-[10px]" [ngClass]="cat.icon"></i>
+                            <span>{{ cat.name[lang()] }}</span>
+                        </a>
+                        }
+                    </div>
+
+                    <!-- Right scroll arrow -->
+                    <button
+                        class="hidden sm:flex absolute -right-1 z-10 w-8 h-8 items-center justify-center rounded-full bg-white shadow-md border border-stone-200 text-stone-500 hover:text-amber-600 hover:border-amber-300 transition-all"
+                        (click)="scrollCategoryNav(200)" aria-label="Scroll right">
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -161,7 +180,7 @@
                         <!-- Category Header -->
                         <div class="flex items-center gap-3 mb-5">
                             <div class="w-9 h-9 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid {{ cat.icon }} text-amber-600 text-sm"></i>
+                                <i class="fa-solid text-amber-600 text-sm" [ngClass]="cat.icon"></i>
                             </div>
                             <h2 class="text-xl font-display font-bold text-stone-900">{{ cat.name[lang()] }}</h2>
                             <div class="flex-1 h-px bg-stone-200"></div>
@@ -177,7 +196,7 @@
                             <div
                                 class="menu-item bg-white rounded-xl border border-stone-200 p-4 hover:shadow-md hover:border-stone-300 transition-all">
                                 <div class="flex items-center gap-2 mb-1">
-                                    <h4 class="text-base font-semibold text-stone-900 leading-tight">{{
+                                    <h4 class="text-wrap font-semibold text-stone-900 leading-tight">{{
                                         item.title[lang()] }}</h4>
                                     @if (item.badge === 'bestseller' || item.badge === 'popular') {
                                     <span
@@ -243,7 +262,7 @@
                                         <span class="absolute inset-0.5 rounded-full bg-red-600"></span>
                                     </span>
                                     }
-                                    <h4 class="text-base font-medium text-stone-900 leading-tight truncate">{{
+                                    <h4 class="text-wrap font-medium text-stone-900 leading-tight truncate">{{
                                         item.title[lang()] }}</h4>
                                     @if (item.badge === 'bestseller' || item.badge === 'popular') {
                                     <span
