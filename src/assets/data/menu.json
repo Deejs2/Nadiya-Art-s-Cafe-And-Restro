@@ -1,20 +1,20 @@
 {
   "categories": [
     {
-      "id": "tea",
+      "id": "tea-coffee-lassi",
       "name": {
-        "en": "Tea",
-        "ne": "चिया"
+        "en": "Tea / Coffee / Lassi",
+        "ne": "चिया / कफी / लस्सी"
       },
       "icon": "fa-mug-hot",
       "items": [
         {
           "id": 101,
           "title": {
-            "en": "Milk Tea",
-            "ne": "दूध चिया"
+            "en": "Tea",
+            "ne": "चिया"
           },
-          "price": 30,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": true,
@@ -22,89 +22,64 @@
             "en": "per cup",
             "ne": "प्रति कप"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Milk Tea",
+                "ne": "दूध चिया"
+              },
+              "price": 30,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Masala Milk Tea",
+                "ne": "मसाला दूध चिया"
+              },
+              "price": 50,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Black Tea",
+                "ne": "कालो चिया"
+              },
+              "price": 20,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Lemon Tea",
+                "ne": "कागती चिया"
+              },
+              "price": 40,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Hot Lemon",
+                "ne": "तातो कागती पानी"
+              },
+              "price": 50,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Hot Lemon with Honey",
+                "ne": "महसहित तातो कागती"
+              },
+              "price": 100,
+              "veg": true
+            }
+          ]
         },
-        {
-          "id": 102,
-          "title": {
-            "en": "Black Tea",
-            "ne": "कालो चिया"
-          },
-          "price": 20,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per cup",
-            "ne": "प्रति कप"
-          },
-          "variants": []
-        },
-        {
-          "id": 103,
-          "title": {
-            "en": "Lemon Tea",
-            "ne": "कागती चिया"
-          },
-          "price": 40,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per cup",
-            "ne": "प्रति कप"
-          },
-          "variants": []
-        },
-        {
-          "id": 104,
-          "title": {
-            "en": "Hot Lemon",
-            "ne": "तातो कागती पानी"
-          },
-          "price": 50,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per cup",
-            "ne": "प्रति कप"
-          },
-          "variants": []
-        },
-        {
-          "id": 105,
-          "title": {
-            "en": "Hot Lemon with Honey",
-            "ne": "महसहित तातो कागती"
-          },
-          "price": 100,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per cup",
-            "ne": "प्रति कप"
-          },
-          "variants": []
-        }
-      ]
-    },
-    {
-      "id": "coffee",
-      "name": {
-        "en": "Coffee",
-        "ne": "कफी"
-      },
-      "icon": "fa-coffee",
-      "items": [
         {
           "id": 201,
           "title": {
-            "en": "Milk Coffee",
-            "ne": "दूध कफी"
+            "en": "Coffee",
+            "ne": "कफी"
           },
-          "price": 80,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": true,
@@ -112,57 +87,40 @@
             "en": "per cup",
             "ne": "प्रति कप"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Milk Coffee",
+                "ne": "दूध कफी"
+              },
+              "price": 80,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Black Coffee",
+                "ne": "कालो कफी"
+              },
+              "price": 50,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Cold Coffee",
+                "ne": "चिसो कफी"
+              },
+              "price": 120,
+              "veg": true
+            }
+          ]
         },
-        {
-          "id": 202,
-          "title": {
-            "en": "Black Coffee",
-            "ne": "कालो कफी"
-          },
-          "price": 50,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per cup",
-            "ne": "प्रति कप"
-          },
-          "variants": []
-        },
-        {
-          "id": 203,
-          "title": {
-            "en": "Cold Coffee",
-            "ne": "चिसो कफी"
-          },
-          "price": 120,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per cup",
-            "ne": "प्रति कप"
-          },
-          "variants": []
-        }
-      ]
-    },
-    {
-      "id": "lassi",
-      "name": {
-        "en": "Lassi",
-        "ne": "लस्सी"
-      },
-      "icon": "fa-glass-water",
-      "items": [
         {
           "id": 301,
           "title": {
-            "en": "Plain Lassi",
-            "ne": "साधा लस्सी"
+            "en": "Lassi",
+            "ne": "लस्सी"
           },
-          "price": 100,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": true,
@@ -170,23 +128,24 @@
             "en": "per glass",
             "ne": "प्रति गिलास"
           },
-          "variants": []
-        },
-        {
-          "id": 302,
-          "title": {
-            "en": "Banana Lassi",
-            "ne": "केरा लस्सी"
-          },
-          "price": 120,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per glass",
-            "ne": "प्रति गिलास"
-          },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Plain Lassi",
+                "ne": "साधा लस्सी"
+              },
+              "price": 100,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Banana Lassi",
+                "ne": "केरा लस्सी"
+              },
+              "price": 120,
+              "veg": true
+            }
+          ]
         }
       ]
     },
@@ -201,10 +160,10 @@
         {
           "id": 401,
           "title": {
-            "en": "Veg Steam Momo",
-            "ne": "भेज स्टिम मोमो"
+            "en": "Veg Momo",
+            "ne": "भेज मोमो"
           },
-          "price": 120,
+          "price": null,
           "badge": "Popular",
           "spicy": false,
           "veg": true,
@@ -212,47 +171,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
-        },
-        {
-          "id": 402,
-          "title": {
-            "en": "Veg Jhol Momo",
-            "ne": "भेज झोल मोमो"
-          },
-          "price": 140,
-          "badge": "Popular",
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
-        },
-        {
-          "id": 403,
-          "title": {
-            "en": "Veg Chilly Momo",
-            "ne": "भेज चिल्ली मोमो"
-          },
-          "price": 150,
-          "badge": "Popular",
-          "spicy": true,
-          "veg": true,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Steam",
+                "ne": "स्टिम"
+              },
+              "price": 120,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Jhol",
+                "ne": "झोल"
+              },
+              "price": 140,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Chilly",
+                "ne": "चिल्ली"
+              },
+              "price": 150,
+              "veg": true
+            }
+          ]
         },
         {
           "id": 404,
           "title": {
-            "en": "Buff Steam Momo",
-            "ne": "बफ स्टिम मोमो"
+            "en": "Buff Momo",
+            "ne": "बफ मोमो"
           },
-          "price": 130,
+          "price": null,
           "badge": "Popular",
           "spicy": false,
           "veg": false,
@@ -260,47 +212,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
-        },
-        {
-          "id": 405,
-          "title": {
-            "en": "Buff Jhol Momo",
-            "ne": "बफ झोल मोमो"
-          },
-          "price": 150,
-          "badge": "Popular",
-          "spicy": false,
-          "veg": false,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
-        },
-        {
-          "id": 406,
-          "title": {
-            "en": "Buff Chilly Momo",
-            "ne": "बफ चिल्ली मोमो"
-          },
-          "price": 170,
-          "badge": "Popular",
-          "spicy": true,
-          "veg": false,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Steam",
+                "ne": "स्टिम"
+              },
+              "price": 130,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Jhol",
+                "ne": "झोल"
+              },
+              "price": 150,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chilly",
+                "ne": "चिल्ली"
+              },
+              "price": 170,
+              "veg": false
+            }
+          ]
         },
         {
           "id": 407,
           "title": {
-            "en": "Chicken Steam Momo",
-            "ne": "चिकेन स्टिम मोमो"
+            "en": "Chicken Momo",
+            "ne": "चिकेन मोमो"
           },
-          "price": 150,
+          "price": null,
           "badge": "Popular",
           "spicy": false,
           "veg": false,
@@ -308,39 +253,32 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
-        },
-        {
-          "id": 408,
-          "title": {
-            "en": "Chicken Jhol Momo",
-            "ne": "चिकेन झोल मोमो"
-          },
-          "price": 180,
-          "badge": "Popular",
-          "spicy": false,
-          "veg": false,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
-        },
-        {
-          "id": 409,
-          "title": {
-            "en": "Chicken Chilly Momo",
-            "ne": "चिकेन चिल्ली मोमो"
-          },
-          "price": 180,
-          "badge": "Popular",
-          "spicy": true,
-          "veg": false,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Steam",
+                "ne": "स्टिम"
+              },
+              "price": 150,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Jhol",
+                "ne": "झोल"
+              },
+              "price": 180,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chilly",
+                "ne": "चिल्ली"
+              },
+              "price": 180,
+              "veg": false
+            }
+          ]
         }
       ]
     },
@@ -355,10 +293,10 @@
         {
           "id": 501,
           "title": {
-            "en": "Veg Fried Rice / Chowmein / Thukpa",
-            "ne": "भेज फ्राइड राइस / चाउमिन / थुक्पा"
+            "en": "Veg",
+            "ne": "भेज"
           },
-          "price": 120,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": true,
@@ -366,15 +304,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Fried Rice",
+                "ne": "फ्राइड राइस"
+              },
+              "price": 120,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Chowmein",
+                "ne": "चाउमिन"
+              },
+              "price": 120,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Thukpa",
+                "ne": "थुक्पा"
+              },
+              "price": 120,
+              "veg": true
+            }
+          ]
         },
         {
           "id": 502,
           "title": {
-            "en": "Egg Fried Rice / Chowmein / Thukpa",
-            "ne": "अण्डा फ्राइड राइस / चाउमिन / थुक्पा"
+            "en": "Egg",
+            "ne": "अण्डा"
           },
-          "price": 140,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": false,
@@ -382,15 +345,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Fried Rice",
+                "ne": "फ्राइड राइस"
+              },
+              "price": 140,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chowmein",
+                "ne": "चाउमिन"
+              },
+              "price": 140,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Thukpa",
+                "ne": "थुक्पा"
+              },
+              "price": 140,
+              "veg": false
+            }
+          ]
         },
         {
           "id": 503,
           "title": {
-            "en": "Buff Fried Rice / Chowmein / Thukpa",
-            "ne": "बफ फ्राइड राइस / चाउमिन / थुक्पा"
+            "en": "Buff",
+            "ne": "बफ"
           },
-          "price": 150,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": false,
@@ -398,15 +386,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Fried Rice",
+                "ne": "फ्राइड राइस"
+              },
+              "price": 150,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chowmein",
+                "ne": "चाउमिन"
+              },
+              "price": 150,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Thukpa",
+                "ne": "थुक्पा"
+              },
+              "price": 150,
+              "veg": false
+            }
+          ]
         },
         {
           "id": 504,
           "title": {
-            "en": "Chicken Fried Rice / Chowmein / Thukpa",
-            "ne": "चिकेन फ्राइड राइस / चाउमिन / थुक्पा"
+            "en": "Chicken",
+            "ne": "चिकेन"
           },
-          "price": 180,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": false,
@@ -414,15 +427,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Fried Rice",
+                "ne": "फ्राइड राइस"
+              },
+              "price": 180,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chowmein",
+                "ne": "चाउमिन"
+              },
+              "price": 180,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Thukpa",
+                "ne": "थुक्पा"
+              },
+              "price": 180,
+              "veg": false
+            }
+          ]
         },
         {
           "id": 505,
           "title": {
-            "en": "All Mix Fried Rice / Chowmein / Thukpa",
-            "ne": "अल मिक्स फ्राइड राइस / चाउमिन / थुक्पा"
+            "en": "All Mix",
+            "ne": "अल मिक्स"
           },
-          "price": 200,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": false,
@@ -430,7 +468,32 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Fried Rice",
+                "ne": "फ्राइड राइस"
+              },
+              "price": 200,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chowmein",
+                "ne": "चाउमिन"
+              },
+              "price": 200,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Thukpa",
+                "ne": "थुक्पा"
+              },
+              "price": 200,
+              "veg": false
+            }
+          ]
         }
       ]
     },
@@ -584,7 +647,7 @@
           "id": 8,
           "title": {
             "en": "Aloo Sadeko",
-            "ne": "आलु सडेका"
+            "ne": "आलु साँधेको"
           },
           "price": 100,
           "badge": null,
@@ -600,7 +663,7 @@
           "id": 9,
           "title": {
             "en": "Peanut Sadeko",
-            "ne": "भुटेको बदाम"
+            "ne": "बदाम साँधेको"
           },
           "price": 100,
           "badge": null,
@@ -616,7 +679,7 @@
           "id": 10,
           "title": {
             "en": "Wai Wai Sadeko",
-            "ne": "वाइ वाइ सडेका"
+            "ne": "वाइ वाइ साँधेको"
           },
           "price": 100,
           "badge": null,
@@ -719,7 +782,7 @@
       "icon": "fa-drumstick-bite",
       "items": [
         {
-          "id": 16,
+          "id": 160,
           "title": {
             "en": "Sausage",
             "ne": "ससेज"
@@ -768,28 +831,12 @@
           ]
         },
         {
-          "id": 17,
+          "id": 161,
           "title": {
-            "en": "Chicken Chilly",
-            "ne": "चिकेन चिल्ली"
+            "en": "Chicken Items",
+            "ne": "चिकेन परिकार"
           },
-          "price": 350,
-          "badge": null,
-          "spicy": true,
-          "veg": false,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
-        },
-        {
-          "id": 18,
-          "title": {
-            "en": "Chicken Roast",
-            "ne": "चिकेन रोस्ट"
-          },
-          "price": 300,
+          "price": null,
           "badge": null,
           "spicy": false,
           "veg": false,
@@ -797,15 +844,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Chicken Chilly",
+                "ne": "चिकेन चिल्ली"
+              },
+              "price": 350,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chicken Roast",
+                "ne": "चिकेन रोस्ट"
+              },
+              "price": 300,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Chicken Choila",
+                "ne": "चिकेन छोयला"
+              },
+              "price": 400,
+              "veg": false
+            }
+          ]
         },
         {
-          "id": 19,
+          "id": 162,
           "title": {
-            "en": "Buff Chilly",
-            "ne": "बफ चिल्ली"
+            "en": "Buff Items",
+            "ne": "बफ परिकार"
           },
-          "price": 250,
+          "price": null,
           "badge": null,
           "spicy": true,
           "veg": false,
@@ -813,15 +885,40 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Buff Chilly",
+                "ne": "बफ चिल्ली"
+              },
+              "price": 250,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Buff Sukuti Sadeko",
+                "ne": "बफ सुकुटी साँधेको"
+              },
+              "price": 300,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Buff Choila",
+                "ne": "बफ छोयला"
+              },
+              "price": 300,
+              "veg": false
+            }
+          ]
         },
         {
-          "id": 20,
+          "id": 163,
           "title": {
-            "en": "Buff Sukuti Sadeko",
-            "ne": "बफ सुकुटी सडेका"
+            "en": "Pork Items",
+            "ne": "पोर्क परिकार"
           },
-          "price": 300,
+          "price": null,
           "badge": null,
           "spicy": true,
           "veg": false,
@@ -829,55 +926,134 @@
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
-        },
+          "variants": [
+            {
+              "label": {
+                "en": "Pork Fry",
+                "ne": "पोर्क फ्राइ"
+              },
+              "price": 350,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Pork Chilly",
+                "ne": "पोर्क चिल्ली"
+              },
+              "price": 380,
+              "veg": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "khana-set",
+      "name": {
+        "en": "Khana Set",
+        "ne": "खाना सेट"
+      },
+      "icon": "fa-bowl-food",
+      "items": [
         {
-          "id": 21,
+          "id": 100,
           "title": {
-            "en": "Buff Chilly (Special)",
-            "ne": "बफ चिल्ली स्पेशल"
+            "en": "Khana Set",
+            "ne": "खाना सेट"
           },
-          "price": 280,
+          "price": null,
           "badge": null,
-          "spicy": true,
+          "spicy": false,
           "veg": false,
           "quantity": {
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
-        },
+          "variants": [
+            {
+              "label": {
+                "en": "Veg Khana",
+                "ne": "भेज खाना"
+              },
+              "price": 250,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Chicken Khana",
+                "ne": "चिकेन खाना"
+              },
+              "price": 350,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Buff Khana",
+                "ne": "बफ खाना"
+              },
+              "price": 450,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Pork Khana",
+                "ne": "पोर्क खाना"
+              },
+              "price": 500,
+              "veg": false
+            },
+            {
+              "label": {
+                "en": "Mutton Khana",
+                "ne": "मटन खाना"
+              },
+              "price": 600,
+              "veg": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biryani-special",
+      "name": {
+        "en": "Biryani / Specialty",
+        "ne": "बिरियानी / विशेष"
+      },
+      "icon": "fa-bowl-rice",
+      "items": [
         {
-          "id": 22,
+          "id": 101,
           "title": {
-            "en": "Pork Fry",
-            "ne": "पोर्क फ्राइ"
+            "en": "Biryani",
+            "ne": "बिरियानी"
           },
-          "price": 350,
-          "badge": null,
-          "spicy": true,
+          "price": null,
+          "badge": "Popular",
+          "spicy": false,
           "veg": false,
           "quantity": {
             "en": "per plate",
             "ne": "प्रति प्लेट"
           },
-          "variants": []
-        },
-        {
-          "id": 23,
-          "title": {
-            "en": "Pork Chilly",
-            "ne": "पोर्क चिल्ली"
-          },
-          "price": 380,
-          "badge": null,
-          "spicy": true,
-          "veg": false,
-          "quantity": {
-            "en": "per plate",
-            "ne": "प्रति प्लेट"
-          },
-          "variants": []
+          "variants": [
+            {
+              "label": {
+                "en": "Veg Biryani",
+                "ne": "भेज बिरियानी"
+              },
+              "price": 250,
+              "veg": true
+            },
+            {
+              "label": {
+                "en": "Chicken Biryani",
+                "ne": "चिकेन बिरियानी"
+              },
+              "price": 350,
+              "veg": false
+            }
+          ]
         }
       ]
     },
@@ -931,32 +1107,28 @@
           ]
         },
         {
-          "id": 30,
+          "id": 25,
           "title": {
-            "en": "8848 Whisky",
-            "ne": "८८४८ व्हिस्की"
+            "en": "Whisky",
+            "ne": "व्हिस्की"
           },
           "price": null,
           "badge": null,
           "spicy": false,
           "veg": true,
-          "quantity": {
-            "en": "serving",
-            "ne": "परोस"
-          },
           "variants": [
             {
               "label": {
-                "en": "60 ml",
-                "ne": "६० ml"
+                "en": "8848 Whisky",
+                "ne": "८८४८ व्हिस्की"
               },
               "price": null,
               "veg": true
             },
             {
               "label": {
-                "en": "90 ml",
-                "ne": "९० ml"
+                "en": "Old Durbar Whisky",
+                "ne": "ओल्ड दरबार व्हिस्की"
               },
               "price": null,
               "veg": true
@@ -964,98 +1136,28 @@
           ]
         },
         {
-          "id": 31,
+          "id": 26,
           "title": {
-            "en": "Old Durbar Whisky",
-            "ne": "ओल्ड दरबार व्हिस्की"
+            "en": "Rum",
+            "ne": "रम"
           },
           "price": null,
           "badge": null,
           "spicy": false,
           "veg": true,
-          "quantity": {
-            "en": "serving",
-            "ne": "परोस"
-          },
           "variants": [
             {
               "label": {
-                "en": "60 ml",
-                "ne": "६० ml"
+                "en": "Khukuri Rum",
+                "ne": "खुकुरी रम"
               },
               "price": null,
               "veg": true
             },
             {
               "label": {
-                "en": "90 ml",
-                "ne": "९० ml"
-              },
-              "price": null,
-              "veg": true
-            }
-          ]
-        },
-        {
-          "id": 32,
-          "title": {
-            "en": "Khukuri Rum",
-            "ne": "खुकुरी रम"
-          },
-          "price": null,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "serving",
-            "ne": "परोस"
-          },
-          "variants": [
-            {
-              "label": {
-                "en": "60 ml",
-                "ne": "६० ml"
-              },
-              "price": null,
-              "veg": true
-            },
-            {
-              "label": {
-                "en": "90 ml",
-                "ne": "९० ml"
-              },
-              "price": null,
-              "veg": true
-            }
-          ]
-        },
-        {
-          "id": 33,
-          "title": {
-            "en": "Gurkha & Guns Rum",
-            "ne": "गोरखा एण्ड गन्स रम"
-          },
-          "price": null,
-          "badge": null,
-          "spicy": false,
-          "veg": true,
-          "quantity": {
-            "en": "serving",
-            "ne": "परोस"
-          },
-          "variants": [
-            {
-              "label": {
-                "en": "60 ml",
-                "ne": "६० ml"
-              },
-              "price": null,
-              "veg": true
-            },
-            {
-              "label": {
-                "en": "90 ml",
-                "ne": "९० ml"
+                "en": "Gurkha & Guns Rum",
+                "ne": "गोरखा एण्ड गन्स रम"
               },
               "price": null,
               "veg": true
@@ -1092,7 +1194,7 @@
                 "en": "Surya",
                 "ne": "सूर्या"
               },
-              "price": 25,
+              "price": 30,
               "veg": true
             },
             {
@@ -1100,7 +1202,7 @@
                 "en": "Shikhar Ice",
                 "ne": "शिखर आइस"
               },
-              "price": 25,
+              "price": 30,
               "veg": true
             }
           ]
@@ -1122,18 +1224,10 @@
           "variants": [
             {
               "label": {
-                "en": "Apple",
-                "ne": "एप्पल"
-              },
-              "price": 400,
-              "veg": true
-            },
-            {
-              "label": {
                 "en": "Mint",
                 "ne": "मिन्ट"
               },
-              "price": 400,
+              "price": 300,
               "veg": true
             }
           ]
